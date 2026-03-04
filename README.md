@@ -214,10 +214,8 @@ GlobalMart-SQL-Database-Project/
 
 ### Screenshots
 
-All query outputs are available in the **screenshots/** folder in this repository.
-
-If you prefer viewing them online, access them here:
-
+All query outputs are ready in the screenshots/ folder, and you can also view them online here:
+```
 ➡️ **[Open the Screenshots Folder](https://drive.google.com/drive/folders/1k7KUZJ-BMNy23JdcuvnZpAEyxBpyrD-a?usp=sharing)**
 ---
 
