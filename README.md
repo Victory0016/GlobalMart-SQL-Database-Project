@@ -206,13 +206,19 @@ To ensure consistency and accuracy:
 ```
 GlobalMart-SQL-Database-Project/
 │
-├── README.md                      # Contains project documentation and overview
-├── GlobalMart Queries. mysql      # Full SQL script with all queries and data operations
-├── screenshots/                   # All screenshots showing query outputs and results
+├── README.md                      # Project documentation and overview
+├── GlobalMart Queries.mysql       # Full SQL script with all queries and data operations
+├── screenshots/                   # All query output screenshots are ready
 └── data/
-    └── Superstore_2023.csv       # CSV used to populate tables
-```
+    └── SQL Global Mart dataset.zip   # Raw dataset used to populate the tables
 
+### Screenshots
+
+All query outputs are available in the **screenshots/** folder in this repository.
+
+If you prefer viewing them online, access them here:
+
+➡️ **[Open the Screenshots Folder](https://drive.google.com/drive/folders/1k7KUZJ-BMNy23JdcuvnZpAEyxBpyrD-a?usp=sharing)**
 ---
 
 ## 🎯 Key Skills Demonstrated
