@@ -19,7 +19,7 @@ The project goes beyond basic querying by transforming raw data into actionable 
 GlobalMart operates with large volumes of transactional data but lacks:
 
 - Clean and standardized datasets
-= Clear visibility into sales performance
+- Clear visibility into sales performance
 - Insights into customer purchasing behavior
 - Understanding of pricing, discounts, and shipping costs
 
@@ -36,37 +36,43 @@ The goal of this project was to:
 - Perform exploratory and advanced SQL analysis
 - Generate business insights and recommendations
 - Prepare data for visualization in Power BI
+  
 ---
 
 ##  🗂️ Dataset Structure
 
 The database consists of the following tables:
 
-- categories → Product categories
-- customers → Customer details
-- employees → Staff information
-- orders → Order transactions
-- order_details → Individual order line items
-- product → Product information
-- shippers → Shipping companies
+- **categories** → Stores product category information  
+- **customers** → Contains customer details  
+- **employees** → Stores staff information  
+- **orders** → Contains order transactions  
+- **order_details** → Stores individual order line items  
+- **product** → Contains product information  
+- **shippers** → Stores shipping company details  
 
 ## 🧱 Database Design
 
-Key Design Features:
+### Key Design Features
 
- Primary Keys for uniqueness:
+**Primary Keys (for uniqueness):**
 - orders (orderID)
 - employees (employeeID)
 - product (productID)
-Composite Key:
-- order_details (orderID, productID)
-- Backup tables created for all datasets before cleaning
 
-👉 This ensures data integrity, consistency, and reliability
+**Composite Key:**
+- order_details (orderID, productID)
+
+**Data Safety:**
+- Backup tables created before cleaning
+
+👉 This ensures data integrity, consistency, and reliability.
+
 ## 🛠️ Sample SQL Queries
 
-Below are full queries from the project.  
-The full script is available in `GlobalMart Queries. mysql`.
+The full SQL script is available in:
+
+`GlobalMart Queries.mysql`
 
 ## 📜 SQL Implementation
 
@@ -139,8 +145,6 @@ SELECT *,
 RANK() OVER(ORDER BY sales_after_discount DESC) AS sales_rank
 FROM sales_summary;
 
----
-
 
 ```
 
@@ -174,6 +178,15 @@ All query outputs are ready in the screenshots/ folder, and you can also view th
 ➡️ **[Open the Screenshots Folder](https://drive.google.com/drive/folders/1k7KUZJ-BMNy23JdcuvnZpAEyxBpyrD-a?usp=sharing)**
 ---
 
+## 📊 Business Insights
+
+- A subset of customers placed significantly more orders, indicating potential high-value customers
+- Higher-priced products contribute disproportionately to total sales value
+- Discounts reduce total revenue per transaction, highlighting a trade-off between volume and profitability
+- Orders with higher freight costs may impact overall profit margins
+
+---
+
 ## 🎯 Key Skills Demonstrated
 
 - Relational database design  
@@ -181,7 +194,25 @@ All query outputs are ready in the screenshots/ folder, and you can also view th
 - Data standardization  
 - Duplicate detection  
 - SQL querying fundamentals  
-- Documentation and project structuring  
+- Documentation and project structuring
 
+---
+
+## 📌 Recommendations
+
+Based on the analysis, the following actions are recommended:
+
+- Focus on retaining high-value customers by offering loyalty programs or targeted incentives
+- Review discount strategies to balance between sales volume and profitability
+- Monitor and optimize freight costs to improve overall margins
+- Promote high-performing products to maximize revenue contribution
+
+---
+
+## 📊 Next Step: Power BI Dashboard
+The cleaned and transformed data from this SQL project was further used to build interactive Power BI dashboards for business reporting and decision-making.
+
+👉 You can explore my Power BI dashboards and full analytics projects here:  
+🔗 **[View My Power BI Portfolio](YOUR_LINK_HERE)**
 ---
 
