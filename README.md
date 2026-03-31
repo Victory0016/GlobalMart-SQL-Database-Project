@@ -68,14 +68,11 @@ Composite Key:
 Below are full queries from the project.  
 The full script is available in `GlobalMart Queries. mysql`.
 
-## 📜 Full SQL Implementation
+## 📜 SQL Implementation
 
-```sql
- ## 📜 SQL Implementation
+The complete SQL script used for this project  including database creation, data cleaning, transformations, and advanced analysis  is available in the file below:
 
-The complete SQL script used for this project — including database creation, data cleaning, transformations, and advanced analysis — is available in the file below:
-
-👉 **[View Full SQL Script]()**
+👉 **[View Full SQL Script](https://drive.google.com/file/d/1HEBvXg2dENy3RJQ1PhfogTxUXwXXgPVS/view?usp=drive_link)**
 
 ---
 
@@ -141,6 +138,10 @@ FROM order_details;
 SELECT *,
 RANK() OVER(ORDER BY sales_after_discount DESC) AS sales_rank
 FROM sales_summary;
+
+---
+
+
 ```
 
 ## 🧹 Data Cleaning Approach
